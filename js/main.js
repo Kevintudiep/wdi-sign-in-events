@@ -9,20 +9,27 @@ pass = document.querySelector("#pass")
 
 
 signin.addEventListener('click', function(){
-  modal.style.display = "block"
+  modal.style.display = "block";
 })
 
 close.addEventListener('click', function(){
-  modal.style.display = "none"
+  modal.style.display = "none";
 })
 
 submit.addEventListener('click', function(event){
-  user.value = 'error';
-  pass.value = 'error';
+  user.className = 'error';
+  pass.className = 'error';
 })
 
+user.addEventListener('mouseover', function(){
+  user.className = '';
 
+})
 
+pass.addEventListener('mouseover', function(){
+  pass.className = '';
+
+})
 
 
 
